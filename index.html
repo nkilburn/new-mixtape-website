@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Made You A Mixtape — A podcast about one song at a time</title>
+<meta name="description" content="Made You A Mixtape is a podcast that dissects one song per episode — its history, its sound, and the story of why it matters.">
+<link rel="alternate" type="application/rss+xml" title="Made You A Mixtape RSS Feed" href="assets/feed.xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      Made You A Mixtape
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="assets/feed.xml" class="btn btn-ghost btn-sm">RSS</a>
+      <a href="episodes.html" class="btn btn-primary btn-sm">Listen Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">A podcast, one song at a time</p>
+        <h1 class="hero-title">Every great song<br>has a <span class="accent">B-side</span> story.</h1>
+        <p class="hero-sub">Each episode of Made You A Mixtape takes a single song apart — the history behind it, the sounds inside it, and the story of why it still matters. No playlists. No Top 40 countdowns. Just one track, given the time it deserves.</p>
+        <div class="hero-actions">
+          <a href="episodes.html" class="btn btn-primary">Start Listening</a>
+          <a href="assets/feed.xml" class="btn btn-ghost">Subscribe via RSS</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="cassette" id="featured-player">
+          <div class="cassette-label">
+            <p class="cassette-eyebrow">Episode 06 &middot; Now Playing</p>
+            <h3 class="cassette-title">Running Up That Hill</h3>
+            <p class="cassette-artist">Kate Bush &middot; 1985</p>
+          </div>
+          <div class="cassette-body">
+            <button class="play-btn" aria-label="Play or pause episode">
+              <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+            </button>
+            <div class="reels">
+              <div class="reel"></div>
+              <div class="cassette-window"></div>
+              <div class="reel"></div>
+            </div>
+          </div>
+          <div class="waveform" aria-hidden="true"></div>
+          <div class="cassette-meta">
+            <span class="time-current">0:00</span>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+            <span class="time-total">0:00</span>
+          </div>
+          <audio preload="metadata">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="stat-strip">
+        <div class="stat"><div class="stat-num">42</div><div class="stat-label">episodes and counting</div></div>
+        <div class="stat"><div class="stat-num">7</div><div class="stat-label">decades covered</div></div>
+        <div class="stat"><div class="stat-num">38<span style="font-size:1.1rem">min</span></div><div class="stat-label">avg. deep dive</div></div>
+        <div class="stat"><div class="stat-num">1</div><div class="stat-label">song per episode, always</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST TRACKS -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Fresh off the tape</p>
+          <h2>Latest episodes</h2>
+        </div>
+        <a href="episodes.html" class="btn btn-ghost btn-sm">View full archive &rarr;</a>
+      </div>
+
+      <div class="track-row">
+        <div class="track-num">06</div>
+        <div class="track-info">
+          <h3>Running Up That Hill</h3>
+          <p class="track-artist">Kate Bush &middot; 1985</p>
+          <div class="track-tags"><span class="tag">Synth-pop</span><span class="tag">Comeback story</span></div>
+        </div>
+        <div class="track-actions">
+          <a href="episodes.html" class="btn btn-ghost btn-sm">Details</a>
+        </div>
+      </div>
+      <div class="track-row">
+        <div class="track-num">05</div>
+        <div class="track-info">
+          <h3>Fast Car</h3>
+          <p class="track-artist">Tracy Chapman &middot; 1988</p>
+          <div class="track-tags"><span class="tag">Folk</span><span class="tag">Debut single</span></div>
+        </div>
+        <div class="track-actions">
+          <a href="episodes.html" class="btn btn-ghost btn-sm">Details</a>
+        </div>
+      </div>
+      <div class="track-row">
+        <div class="track-num">04</div>
+        <div class="track-info">
+          <h3>Ain't No Mountain High Enough</h3>
+          <p class="track-artist">Marvin Gaye &amp; Tammi Terrell &middot; 1967</p>
+          <div class="track-tags"><span class="tag">Motown</span><span class="tag">Duet</span></div>
+        </div>
+        <div class="track-actions">
+          <a href="episodes.html" class="btn btn-ghost btn-sm">Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="dark-section">
+    <div class="container">
+      <p class="eyebrow">How an episode gets made</p>
+      <h2 style="max-width:16ch; margin-bottom:1em;">One song, taken all the way apart.</h2>
+      <div class="card-grid">
+        <div class="card" style="background:var(--paper)">
+          <p class="eyebrow">Side A</p>
+          <h3>The history</h3>
+          <p>Where the song came from — the writer's life, the studio, the year it dropped into.</p>
+        </div>
+        <div class="card" style="background:var(--paper)">
+          <p class="eyebrow">Side A</p>
+          <h3>The sound</h3>
+          <p>Isolated clips and close listening — the bassline, the vocal take, the production choice nobody talks about.</p>
+        </div>
+        <div class="card" style="background:var(--paper)">
+          <p class="eyebrow">Side B</p>
+          <h3>The story</h3>
+          <p>Why this one song, on this one day, still means something — told through the people who lived it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section>
+    <div class="container about-grid">
+      <figure class="polaroid">
+        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop" alt="Close-up of a cassette tape resting on a wooden table">
+        <figcaption>the actual tape deck, 2024</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">About the show</p>
+        <h2>Made by someone who still owns a Walkman.</h2>
+        <p>Made You A Mixtape started as a habit of burning CDs for friends with liner notes nobody asked for. It's now a podcast — same instinct, more research. Every episode is one song, one rabbit hole, and one reason to hear it differently.</p>
+        <a href="about.html" class="btn btn-ghost">Read the full story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG TEASER -->
+  <section class="seafoam-section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">From the notebook</p>
+          <h2>Liner notes</h2>
+        </div>
+        <a href="blog.html" class="btn btn-ghost btn-sm">Read the blog &rarr;</a>
+      </div>
+      <div class="card-grid">
+        <a class="card blog-card" href="blog.html">
+          <p class="blog-meta">June 12, 2026 &middot; 4 min read</p>
+          <h3>The one-take vocal that almost got scrapped</h3>
+          <p>A B-side detail from Episode 06 that didn't fit the runtime — Kate Bush's isolated vocal, and why the "wrong" take won.</p>
+        </a>
+        <a class="card blog-card" href="blog.html">
+          <p class="blog-meta">May 29, 2026 &middot; 6 min read</p>
+          <h3>How we pick the song</h3>
+          <p>The (very unscientific) process behind choosing one track out of thousands for an episode.</p>
+        </a>
+        <a class="card blog-card" href="blog.html">
+          <p class="blog-meta">May 14, 2026 &middot; 3 min read</p>
+          <h3>Motown's house band never got the credit</h3>
+          <p>Notes on the Funk Brothers, gathered while researching Episode 04.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section>
+    <div class="container">
+      <div class="newsletter">
+        <div>
+          <h2>Get the liner notes in your inbox.</h2>
+          <p>One email per episode. Research rabbit holes, sound clips, no spam.</p>
+        </div>
+        <form class="newsletter-form" data-demo-form>
+          <label for="nl-email" class="visually-hidden" style="position:absolute; left:-9999px;">Email address</label>
+          <input type="email" id="nl-email" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom:14px; display:flex;">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Made You A Mixtape
+        </a>
+        <p style="color:var(--ink-soft); max-width:32ch;">One song per episode — the history, the sound, and the story of why it's special.</p>
+        <div class="social-row" style="margin-top:18px;">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="assets/feed.xml" aria-label="RSS feed">RSS</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Listen on</h4>
+        <ul>
+          <li><a href="#">Apple Podcasts</a></li>
+          <li><a href="#">Spotify</a></li>
+          <li><a href="#">YouTube Music</a></li>
+          <li><a href="assets/feed.xml">RSS feed</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="contact.html">Contact form</a></li>
+          <li><a href="contact.html#suggest">Suggest a song</a></li>
+          <li><a href="mailto:hello@madeyouamixtape.fm">hello@madeyouamixtape.fm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Made You A Mixtape. All rights reserved.</span>
+      <span>Built with care, side A and side B.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Made You A Mixtape</title>
+<meta name="description" content="Get in touch with Made You A Mixtape, suggest a song, or sign up for the newsletter.">
+<link rel="alternate" type="application/rss+xml" title="Made You A Mixtape RSS Feed" href="assets/feed.xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      Made You A Mixtape
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="assets/feed.xml" class="btn btn-ghost btn-sm">RSS</a>
+      <a href="episodes.html" class="btn btn-primary btn-sm">Listen Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Say hello</p>
+      <h1>Got a song stuck in your head?</h1>
+      <p>Send a message, pitch a track for a future episode, or just get the newsletter. All three live here.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;" id="contact-grid">
+
+        <!-- GENERAL CONTACT -->
+        <div>
+          <div class="form-panel">
+            <p class="eyebrow">General inquiries</p>
+            <h3>Send a message</h3>
+            <form data-demo-form>
+              <div class="field">
+                <label for="c-name">Name</label>
+                <input type="text" id="c-name" name="name" required>
+              </div>
+              <div class="field">
+                <label for="c-email">Email</label>
+                <input type="email" id="c-email" name="email" required>
+              </div>
+              <div class="field">
+                <label for="c-reason">What's this about?</label>
+                <select id="c-reason" name="reason">
+                  <option>General question</option>
+                  <option>Press / interview request</option>
+                  <option>Sponsorship</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <p class="form-note">Usually get back to you within a few days — this is a one-person show.</p>
+            </form>
+            <div class="form-success">Thanks — your message is in the inbox. You'll hear back soon.</div>
+          </div>
+        </div>
+
+        <!-- SONG SUGGESTION -->
+        <div id="suggest">
+          <div class="form-panel">
+            <p class="eyebrow">Pitch a track</p>
+            <h3>Suggest a song</h3>
+            <form data-demo-form>
+              <div class="field">
+                <label for="s-song">Song title</label>
+                <input type="text" id="s-song" name="song" required>
+              </div>
+              <div class="field">
+                <label for="s-artist">Artist</label>
+                <input type="text" id="s-artist" name="artist" required>
+              </div>
+              <div class="field">
+                <label>How well do you know the backstory?</label>
+                <div class="radio-group">
+                  <label class="radio-option"><input type="radio" name="knowledge" value="none"> Not at all</label>
+                  <label class="radio-option"><input type="radio" name="knowledge" value="some" checked> A little</label>
+                  <label class="radio-option"><input type="radio" name="knowledge" value="lots"> I could host the episode</label>
+                </div>
+              </div>
+              <div class="field">
+                <label for="s-why">Why does this one deserve an episode?</label>
+                <textarea id="s-why" name="why" required placeholder="What makes this song special to you?"></textarea>
+              </div>
+              <div class="field">
+                <label for="s-email">Your email (optional, in case we pick it)</label>
+                <input type="email" id="s-email" name="email">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit pick</button>
+              <p class="form-note">Every episode so far started as someone else's suggestion.</p>
+            </form>
+            <div class="form-success">Got it — added to the shortlist. Thanks for the pick.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section>
+    <div class="container">
+      <div class="newsletter">
+        <div>
+          <h2>Just here for the newsletter?</h2>
+          <p>One email per episode — no extra noise.</p>
+        </div>
+        <form class="newsletter-form" data-demo-form>
+          <input type="email" placeholder="you@email.com" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom:14px; display:flex;">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Made You A Mixtape
+        </a>
+        <p style="color:var(--ink-soft); max-width:32ch;">One song per episode — the history, the sound, and the story of why it's special.</p>
+        <div class="social-row" style="margin-top:18px;">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="assets/feed.xml" aria-label="RSS feed">RSS</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Listen on</h4>
+        <ul>
+          <li><a href="#">Apple Podcasts</a></li>
+          <li><a href="#">Spotify</a></li>
+          <li><a href="#">YouTube Music</a></li>
+          <li><a href="assets/feed.xml">RSS feed</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="contact.html">Contact form</a></li>
+          <li><a href="contact.html#suggest">Suggest a song</a></li>
+          <li><a href="mailto:hello@madeyouamixtape.fm">hello@madeyouamixtape.fm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Made You A Mixtape. All rights reserved.</span>
+      <span>Built with care, side A and side B.</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  @media(max-width:800px){
+    #contact-grid{ grid-template-columns:1fr !important; }
+  }
+</style>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
